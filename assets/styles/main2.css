@@ -5,8 +5,9 @@
 
 .head {
   padding-left: 65px;
-  margin-top: 21px;
+  padding-top: 21px;
   background-color: #ffffff;
+  position: relative;
 }
 
 .main {
@@ -66,7 +67,7 @@
 }
 
 .hero {
-  background: url("../../img/hero.png") #e6e6e6;
+  background: url("../img/hero.png") #e6e6e6;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -199,7 +200,7 @@
 }
 
 .mask {
-  background-image: url(/assets/img/Mask\ Group.svg);
+  background-image: url(../img/Mask\ Group.svg);
   height: 308px;
   border-radius: 5px;
   background-repeat: no-repeat;
@@ -309,7 +310,7 @@
 }
 .svyaz .form-wrapper {
   padding: 62px;
-  background: url("../../img/back.png") #333333;
+  background: url("../img/back.png") #333333;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -344,3 +345,46 @@
   border: none;
   background-color: #FFBD54;
 }/*# sourceMappingURL=main.css.map */
+
+
+
+
+.modal {
+  position: absolute;
+  top: 0;
+    display: none;
+  left: 0;
+
+}
+.modal.active {
+  display: block;
+}
+.modal-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 850px;
+  height: 650px;
+  background: url('../img/Group 62.png') #FFBD54;
+  background-size: cover;
+  padding: 20px;
+  z-index: 10;
+  position: relative;
+  margin-top: 10%;
+  left: 50%;
+}
+.modal-content form{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal-shadow{
+  width: 100vw;
+  z-index: 5;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  backdrop-filter: blur(4px);
+}

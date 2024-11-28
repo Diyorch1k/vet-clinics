@@ -10,22 +10,32 @@
         <div class="main">
             <img src="/assets/img/logo.svg" alt="">
             <div class="main__m">
-                <a href="#">Главная</a>
+                <a href="/index.html">Главная</a>
                 <a href="#">Клинике</a>
                 <a href="#">Наши Услуги</a>
                 <a href="#">Полезные Статьи</a>
                 <a href="#">FAQ</a>
-                <a href="#">Контакты</a>
+                <a href="/contact.html">Контакты</a>
             </div>
             <div class="main__m2">
-                <a href="#">Задать вопрос</a>
+                <button id="open-modal" href="#">Задать вопрос</button>
             </div>
+        </div>
+        <div class="modal">
+                <div class="modal-shadow"></div>
+              <div class="modal-content">
+                <h2>Остались вопросы?</h2>
+                <form>
+                    <input type="text" name="name" value="">
+                    <input type="email" name="" id="">
+                    <textarea rows="" cols=""></textarea>
+                </form>
+              </div>
         </div>
     </div>
 
     <div class="hero">
         <div class="container">
-
             <div class="mi">
                 <h1>Мы заботимся o <br> ваших питомцах!</h1>
                 <p>Вам и Вашему любимцу множество услуг по диагностике, профилактике <br>
@@ -196,7 +206,7 @@
              <div class="form-wrapper">
                 <h2>Обратная связь</h2>
                 <p>При возникновении вопросов по поводу работы <br> клиники или консультаций, заполните форму ниже:</p>
-                    <form action="" class="form">   
+                    <form class="form" action="" class="form">   
                         <input type="text" placeholder="Ваше имя" />
                         <input type="email" placeholder="Email для обратной связи" />
                             <textarea rows="8" name="" id="" placeholder="Например: в каком возрасте можно прививать от бешенства?"></textarea>
@@ -206,5 +216,6 @@
     </div>
 
 </body>
+<script src="./index.js"></script>
 
 </html>
